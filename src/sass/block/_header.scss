@@ -1,0 +1,29 @@
+.header{
+    width: 100vw;
+    min-height: 50px;
+    padding: 10px;
+    background-color: red;
+}
+.header-nav{
+    display: flex;
+    width: 100%;
+    min-height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.header-ul{
+    list-style: none; 
+}
+
+.header-li {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 100px;
+    a {
+        text-decoration: none;
+        color: black;
+        font-size:  22px;
+    }
+}
