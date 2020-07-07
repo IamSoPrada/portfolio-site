@@ -31,6 +31,7 @@
 }
 .contact-btn{
     margin-left: 35px;
+    margin-right: 35px;
     padding: 10px 30px;
     border-radius: 25px;
     border: none;
@@ -41,4 +42,8 @@
 }
 .contact-btn:hover {
     transform: scale(1.2);
+}
+.fa-moon{
+    font-size: 2rem;
+    cursor: pointer;
 }
