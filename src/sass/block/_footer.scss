@@ -2,7 +2,23 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:#b1beeb;
-    color: white;
+    background-color:#325f5f;
+    color: rgb(34, 30, 30);
     text-align: center;
+    
+
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+    a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: blanchedalmond;
+    }
 }
