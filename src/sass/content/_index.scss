@@ -6,9 +6,30 @@
             padding-top: 200px;
             font-size: 4.5rem;
             text-align: start;
+            background: -webkit-linear-gradient(#89abb9 51%, #b1beeb 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
-
-
 }
 
+.icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+.icon{
+    flex-direction: column;
+}
+.fa-react, .fa-css3-alt, .fa-js, .fa-html5{
+    font-size: 5rem;
+    transition: 0.3s ease;
+    
+}
+
+.fa-react:hover, .fa-css3-alt:hover, .fa-js:hover, .fa-html5:hover{
+    transform: scale(1.2);
+    color: #b1beeb;
+    cursor: pointer;
+}
