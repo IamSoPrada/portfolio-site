@@ -13,8 +13,8 @@
         <nav class="header-nav">
           <ul class="header-ul">
             <li class="header-li"><a href="../public/index.html">Главная</a></li>
-            <li class="header-li"><a href="../public/projects.html">Проекты</a></li>
-            <li class="header-li"><a href="../public/about.html">Об авторе</a></li>
+            <li class="header-li" id="projects"><a href="../public/projects.html">Проекты</a></li>
+            <li class="header-li" id="about"><a href="../public/about.html">Об авторе</a></li>
           </ul>
         </nav><a class="btn" href="#">
           <button class="contact-btn">Написать</button></a><i class="fas fa-moon"></i>
@@ -23,15 +23,27 @@
     <main>
       <section class="main-page">
         <div class="container">
-          <div class="promo-info">
-            <h1 class="promo-title">Привет! Меня зовут Рустем.<br> Я начинающий Frontend Developer :)</h1>
+          <div class="wrapper">
+            <div class="promo-info">
+              <h1 class="promo-title">Привет! Меня зовут Рустем.<br> Я начинающий Frontend Developer :)</h1>
+            </div>
+            <div class="icons">
+              <div class="icon"><i class="fab fa-html5"></i> </div>
+              <div class="icon"><i class="fab fa-css3-alt"></i> </div>
+              <div class="icon"><i class="fab fa-js"></i></div>
+              <div class="icon"><i class="fab fa-python"></i> </div>
+              <div class="icon"><i class="fab fa-react"></i> </div>
+            </div>
           </div>
-          <div class="icons">
-            <div class="icon"><i class="fab fa-html5"></i> </div>
-            <div class="icon"><i class="fab fa-css3-alt"></i> </div>
-            <div class="icon"><i class="fab fa-js"></i></div>
-            <div class="icon"><i class="fab fa-python"></i> </div>
-            <div class="icon"><i class="fab fa-react"></i> </div>
+        </div>
+      </section>
+      <section class="main-projects">
+        <div class="container">
+          <div class="projects-cards">
+            <div class="project-card">
+              <div class="card-img"></div>
+              <div class="card-text"> </div>
+            </div>
           </div>
         </div>
       </section>
@@ -39,7 +51,8 @@
         <div class="container">
           <div class="about-cards">
             <div class="about-card">
-              <div class="card-text"> </div>
+              <div class="about-img"></div>
+              <div class="about-text"></div>
             </div>
           </div>
         </div>
@@ -51,6 +64,7 @@
       </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollToPlugin.min.js"></script>
     <script src="./js/scriptGSAP.js"></script>
   </body>
 </html>
