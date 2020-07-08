@@ -1,16 +1,18 @@
 .main-page{
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
+    overflow: hidden;
     .promo-info {
         display: flex;
         .promo-title{
-            padding-top: 200px;
+            padding-top: 100px;
             font-size: 4.5rem;
             text-align: start;
             background: -webkit-linear-gradient(#89abb9 51%, #b1beeb 100%);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            
         }
     }
 }
@@ -19,6 +21,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 150px;
+    
 }
 .icon{
     flex-direction: column;
@@ -30,7 +33,23 @@
 }
 
 .fa-react:hover, .fa-css3-alt:hover, .fa-js:hover, .fa-html5:hover, .fa-python:hover{
-    transform: scale(1.2);
     color: #b1beeb;
     cursor: pointer;
+}
+
+.fa-react {
+    color: rgba(62, 62, 177, 0.932);
+}
+.fa-html5 {
+    color: red;
+}
+.fa-css3-alt{
+    color: orange;
+}
+.fa-js{
+    color: rgba(226, 226, 6, 0.897);
+}
+.main-about {
+    min-height: 100vh;
+    width: 100%;
 }

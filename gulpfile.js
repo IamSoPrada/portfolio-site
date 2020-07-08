@@ -49,14 +49,19 @@ gulp.task('styles', function () {
 });
 
 
-
+gulp.task('js', function () {
+    return gulp.src("src/js/**/*.+(js)")
+        .pipe(gulp.dest("public/js"))
+        .pipe(browserSync.stream());
+});
 
 
 gulp.task('watch', function () {
     gulp.watch("src/sass/**/*.+(scss|sass)", gulp.parallel('styles'));
     gulp.watch('src/**/*.pug', gulp.parallel('rebuild'));
+    gulp.watch('src/**/*.js', gulp.parallel('js'));
 })
 
 
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'pug'));
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'pug', 'js'));
